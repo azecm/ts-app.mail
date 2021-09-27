@@ -1,0 +1,8 @@
+# dependencies
+.idea
+files
+client-build
+node_modules
+package-lock.json
+index.js
+index.js.map

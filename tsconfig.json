@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "downlevelIteration": true
+  },
+  "exclude": ["../node_modules", "node_modules"]
+}
+

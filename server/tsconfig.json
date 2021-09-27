@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2019",
+
+    "removeComments": true,
+    "declaration": false,
+    "sourceMap": false,
+    //"sourceRoot": "./src",
+
+    "allowJs": true,
+    "outDir": "./dist",
+    "incremental": true,
+    "alwaysStrict": true,
+    "charset": "UTF-8",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    //"noUnusedLocals": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+    }
+  },
+  "include": ["./src"],
+  "exclude": ["../node_modules", "node_modules"]
+}

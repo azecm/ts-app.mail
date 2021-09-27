@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model boxes {
+  idb         BigInt   @id @default(autoincrement())
+  idu         Int
+  box         Int
+  date        DateTime @default(now()) @db.Timestamp(6)
+  unread      Boolean  @default(false)
+  sender      Json     @default("{}")
+  recipient   Json     @default("{}")
+  subject     String   @default("")
+  content     String   @default("")
+  attachments Json     @default("{}")
+}
+
+model notes {
+  idn      Int    @id @default(autoincrement())
+  idp      Int
+  idu      Int
+  position Int
+  label    String @default("") @db.VarChar(50)
+  email    String @default("") @db.VarChar(50)
+  content  String @default("")
+  event    Json   @default("{}")
+}
+
+model users {
+  idu       Int    @id @default(autoincrement())
+  name      String @default("") @db.VarChar(50)
+  password  String @default("") @db.VarChar(50)
+  email     String @default("") @db.VarChar(50)
+  signature String @default("")
+}
